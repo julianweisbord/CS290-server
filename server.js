@@ -51,9 +51,10 @@ db.once('open', function() {
 		if (document.getElementById("condition").value == 3) book_condition: "Good";
 		if (document.getElementById("condition").value == 2) book_condition: "Fair";
 		if (document.getElementById("condition").value == 1) book_condition: "Poor";
-		description: document.querySelector(".ui.radio.checkbox:checked").value;
+		description: document.getElementById("description").value;
 	})
 
 	listing.save(function (err) {
 		if (err) return console.error(err);
 	})
+});
