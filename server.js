@@ -35,7 +35,10 @@ db.once('open', function() {
   	price: Number,
   	isbn: string,
   	book_condition: string,
-  	description: string
+  	description: string,
+		phone: string,
+		email: string,
+		facebook: string
 	});
 
 	var book = mongoose.model('book',bookSchema);
